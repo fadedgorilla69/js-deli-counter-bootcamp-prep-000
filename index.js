@@ -11,15 +11,11 @@ function takeANumber(line, name){
 
 
 function nowServing(line){
-  if (!line.length){return "There is nobody waiting to be served!"}
-  
-  const numbersAndNames = [];
-  
-  for (let i = 0, l = line.length; i < l; i++) {
-    numbersAndNames.push(`${i+1}. ${line[i]}`)
+  if (!line.length) {
+    return "There is nobody waiting to be served!"
   }
 
-  return `Currently serving ${numbersAndNames.join(', ')}`
+  return `Currently serving ${line.shift()}.`
 }
 
 
