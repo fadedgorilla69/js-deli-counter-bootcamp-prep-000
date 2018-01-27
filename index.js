@@ -9,7 +9,6 @@ function takeANumber(line, name){
 
 
 
-
 function nowServing(line){
   if (!line.length) {
     return "There is nobody waiting to be served!"
@@ -31,3 +30,8 @@ function currentLine(katzDeliLine){
     numbersAndNames.push(`${i + 1}. ${line[i]}`)
   
 }}
+
+function currentLine(line){
+  
+  
+}
