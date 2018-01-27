@@ -16,7 +16,7 @@ function nowServing(line){
   const numbersAndNames = [];
   
   for (let i = 0, l = line.length; i < l; i++) {
-    numbersAndNames.unshift(`${i+1}. ${line[i]}`)
+    numbersAndNames.push(`${i+1}. ${line[i]}`)
   }
 
   return `Currently serving ${numbersAndNames.join(', ')}`
